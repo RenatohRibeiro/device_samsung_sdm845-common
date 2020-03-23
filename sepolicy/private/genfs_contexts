@@ -1,7 +1,7 @@
 # Lights
-genfscon sysfs /devices/virtual/sec/led                                            u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/panel_drv@001/backlight/panel/brightness          u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/panel_drv@001/backlight/panel/max_brightness      u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/virtual/sec/led                              u:object_r:sysfs_leds:s0
+genfscon sysfs /class/backlight/panel0-backlight/brightness          u:object_r:sysfs_leds:s0
+genfscon sysfs /class/backlight/panel0-backlight/max_brightness      u:object_r:sysfs_leds:s0
 
 # Health
         # Note 9
