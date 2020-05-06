@@ -4,12 +4,13 @@ genfscon sysfs /devices/platform/panel_drv@001/backlight/panel/brightness       
 genfscon sysfs /devices/platform/panel_drv@001/backlight/panel/max_brightness      u:object_r:sysfs_leds:s0
 
 # Health
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-13/13-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-16/16-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-13/13-0066/max77705-charger   u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-16/16-0066/max77705-charger   u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14370000.hsi2c/i2c-14/14-003b/power_supply/mfc-charger   u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14370000.hsi2c/i2c-17/17-003b/power_supply/mfc-charger   u:object_r:sysfs_health:s0
+        # Note 9
+genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-32/32-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
+genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-32/32-0066/max77705-charger   u:object_r:sysfs_health:s0
+
+        # S9/S9+
+gensfcon sysfs /devices/platform/soc/a98000.i2c/i2c-31/31-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
+gensfcon sysfs /devices/platform/soc/a98000.i2c/i2c-31/31-0066/max77705-charger   u:object_r:sysfs_health:s0
 
 # Sec Key
 genfscon sysfs /devices/virtual/sec/sec_key                                       u:object_r:sysfs_sec_key:s0
@@ -19,3 +20,4 @@ genfscon sysfs /devices/platform/141c0000.speedy/i2c-15/15-0000/s2mps18-rtc/rtc 
 
 # Touch
 genfscon sysfs /devices/virtual/sec/tsp     u:object_r:sysfs_sec_tsp:s0
+
