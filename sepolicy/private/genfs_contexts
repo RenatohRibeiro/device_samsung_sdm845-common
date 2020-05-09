@@ -9,8 +9,9 @@ genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-32/32-0066/max77705-fuelgaug
 genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-32/32-0066/max77705-charger   u:object_r:sysfs_health:s0
 
         # S9/S9+
-gensfcon sysfs /devices/platform/soc/a98000.i2c/i2c-31/31-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
-gensfcon sysfs /devices/platform/soc/a98000.i2c/i2c-31/31-0066/max77705-charger   u:object_r:sysfs_health:s0
+genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-31/31-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
+genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-31/31-0066/max77705-charger   u:object_r:sysfs_health:s0
+genfscon sysfs /devices/platform/soc/soc:i2c@14/i2c-27/27-003b/power_supply/mfc-charger   u:object_r:sysfs_health:s0
 
 # Sec Key
 genfscon sysfs /devices/virtual/sec/sec_key                                       u:object_r:sysfs_sec_key:s0
