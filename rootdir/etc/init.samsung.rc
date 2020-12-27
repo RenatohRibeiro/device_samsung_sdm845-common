@@ -5,6 +5,15 @@ on init
     # Set SunlightEnhancement sysnode owner
     chown system system /sys/class/mdnie/mdnie/lux
 
+    # Brightness Permission
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+    chown system system /sys/class/backlight/panel0-backlight/max_brightness
+    chmod 0660 /sys/class/backlight/panel0-backlight/brightness
+    chmod 0660 /sys/class/backlight/panel0-backlight/max_brightness
+
+    # Flashlight
+    chown system system /sys/class/camera/flash/rear_flash
+
     # Vibrator
     chown system system /sys/class/timed_output/vibrator/enable
     chown system system /sys/class/timed_output/vibrator/intensity
