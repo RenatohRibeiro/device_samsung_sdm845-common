@@ -96,8 +96,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf
 
 # LiveDisplay
+#PRODUCT_PACKAGES += \
+ #   lineage.livedisplay@2.0-service.sdm845
+
+# SamsungDoze
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service.sdm845
+    SamsungDoze
+
 
 # Touch
 PRODUCT_PACKAGES += \
