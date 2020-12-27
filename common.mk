@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.9810
+    lineage.touch@1.0-service.sdm845
 
 # Trust
 PRODUCT_PACKAGES += \
