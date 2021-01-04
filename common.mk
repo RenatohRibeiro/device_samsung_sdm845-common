@@ -104,15 +104,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
-
-# Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.sdm845
-
-# Trust
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
-
 # Power
 PRODUCT_PACKAGES += \
     power.qcom
