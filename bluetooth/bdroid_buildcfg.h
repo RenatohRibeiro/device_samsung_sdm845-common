@@ -18,21 +18,27 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#pragma push_macro("PROPERTY_VALUE_MAX")
-
-#include <cutils/properties.h>
+#include <stdint.h>
 #include <string.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int property_get(const char *key, char *value, const char *default_value);
+#ifdef __cplusplus
+}
+#endif
 
 static inline const char* BtmGetDefaultName()
 {
-    char product_device[PROPERTY_VALUE_MAX];
+    char product_device[92];
     property_get("ro.product.device", product_device, "");
     
-    if (strstr(product_device, "starlte"))
+    if (strstr(product_device, "starqltechn"))
         return "Galaxy S9";
-    if (strstr(product_device, "star2lte"))
+    if (strstr(product_device, "starq2ltechn"))
         return "Galaxy S9+";
-    if (strstr(product_device, "crownlte"))
+    if (strstr(product_device, "crownqltechn"))
         return "Galaxy Note 9";
     
     // Fallback to Default
@@ -40,7 +46,8 @@ static inline const char* BtmGetDefaultName()
 }
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
-
+#define MAX_L2CAP_CHANNELS    32
+#define GATT_MAX_PHY_CHANNEL  10
 #define BTM_WBS_INCLUDED TRUE       /* Enable WBS */
 #define BTIF_HF_WBS_PREFERRED FALSE /* Don't prefer WBS    */
 
@@ -48,6 +55,5 @@ static inline const char* BtmGetDefaultName()
 
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 
-#pragma pop_macro("PROPERTY_VALUE_MAX")
 
 #endif
