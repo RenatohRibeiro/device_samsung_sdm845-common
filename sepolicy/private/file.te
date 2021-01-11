@@ -7,4 +7,4 @@ type sysfs_kgsl, sysfs_type, fs_type;
 type sysfs_devfreq, sysfs_type, fs_type;
 type sysfs_gpu, sysfs_type, fs_type;
 type proc_touchpanel, fs_type;
-
+type persist_file, file_type; 
