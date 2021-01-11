@@ -9,6 +9,8 @@ lib/libsecaudiocoreutils.so
 
 # Bluetooth - APT-X
 lib64/libaptX_encoder.so
+lib64/hw/audio.bluetooth_qti.default.so
+lib/hw/audio.bluetooth_qti.default.so
 
 # Hotword Enrollment
 -priv-app/HotwordEnrollmentOKGoogleExWCD9340/HotwordEnrollmentOKGoogleExWCD9340.apk
