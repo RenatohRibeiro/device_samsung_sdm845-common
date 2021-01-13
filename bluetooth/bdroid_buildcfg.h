@@ -28,11 +28,11 @@ static inline const char* BtmGetDefaultName()
     char product_device[PROPERTY_VALUE_MAX];
     property_get("ro.product.device", product_device, "");
     
-    if (strstr(product_device, "starlte"))
+    if (strstr(product_device, "starqltechn"))
         return "Galaxy S9";
-    if (strstr(product_device, "star2lte"))
+    if (strstr(product_device, "star2qltechn"))
         return "Galaxy S9+";
-    if (strstr(product_device, "crownlte"))
+    if (strstr(product_device, "crownqltechn"))
         return "Galaxy Note 9";
     
     // Fallback to Default
