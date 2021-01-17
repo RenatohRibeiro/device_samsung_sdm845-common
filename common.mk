@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.samsung.rc \
+    fstab.zram \
     init.usb_accessory.rc
 
 # Recovery
