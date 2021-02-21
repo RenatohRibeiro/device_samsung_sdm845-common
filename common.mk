@@ -110,10 +110,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleCamera
 
-# Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.sdm845
-
 # Trust
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
